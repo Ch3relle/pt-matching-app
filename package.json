@@ -1,0 +1,27 @@
+{
+  "name": "pt-tech",
+  "version": "1.0.0",
+  "description": "this is a project for project-tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ch3relle/pt-matching-app.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ch3relle/pt-matching-app/issues"
+  },
+  "homepage": "https://github.com/Ch3relle/pt-matching-app#readme",
+  "dependencies": {
+    "camelcase": "^6.2.0",
+    "longest-streak": "^2.0.4",
+    "repeat-string": "^1.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
