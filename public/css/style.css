@@ -58,11 +58,11 @@ nav li a:hover {
   color: #DD1155;
 }
 
-.about {
+.aboutHeader {
   padding-right: .5rem;
 }
 
-.profile {
+.profileHeader {
   padding-left: .5rem;
 }
 
@@ -71,6 +71,12 @@ main {
   /* padding: .5rem; */
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: auto;
+}
+
+/* home business */
 /* cards */
 .cards {
   display: flex;
@@ -130,7 +136,40 @@ main {
   font-weight: 700;
 }
 
+.about {
+
+}
+
+/* profile business */
+.profileCard {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 3rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+}
+
+button {
+  font-family: Montserrat, monospace;
+  background-color: #F0C808;
+  border-style: none;
+  border-radius: 10px;
+  padding: .5rem 0;
+}
+
+button:hover {
+  
+}
+
 /* footer business */
 footer {
   padding: 1rem;
+  font-weight: 700;
 }
