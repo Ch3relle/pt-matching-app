@@ -1,38 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home - MyDramaMatch</title>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
+<%- include ("./partials/head") %>
 
-<!-- begin body -->
-<body>
-
-<header>
-  <div class="">
-    <h1>insert MyDramaMatch logo</h1>
-  </div>
-
-  <nav>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Matches</a></li>
-      <li><a href="#">My Profile</a></li>
-    </ul>
-  </nav>
-
-</header>
-
+<!-- begin main -->
 <main>
-<h2>MyDramaMatch is a matching app which matches you to people with similar taste in Kdramas! Start the quiz to find your match!</h2>
 
-  <a href="/question1.ejs"><h3>start the quiz</h3></a>
+<section class="cards">
+
+  <a href="#" class="card">
+    <div class="card__image"></div>
+    <div class="card__content">
+      <div class="card__name">Ann</div>
+      <div class="card__favDrama">Crash Landing On You</div>
+      <div class="card__oneliner">"Hey you!"</div>
+    </div>
+  </a>
+
+  <a href="#" class="card">
+    <div class="card__image"></div>
+    <div class="card__content">
+      <div class="card__name">Robin</div>
+      <div class="card__favDrama">Kingdom</div>
+      <div class="card__oneliner">"I feel great!"</div>
+    </div>
+  </a>
+
+  <a href="#" class="card">
+    <div class="card__image"></div>
+    <div class="card__content">
+      <div class="card__name">Mimi</div>
+      <div class="card__favDrama">Save Me</div>
+      <div class="card__oneliner">"O_o"</div>
+    </div>
+  </a>
+
+  <a href="#" class="card">
+    <div class="card__image"></div>
+    <div class="card__content">
+      <div class="card__name">Jo</div>
+      <div class="card__favDrama">Goblin</div>
+      <div class="card__oneliner">"I'm Sunny."</div>
+    </div>
+  </a>
+
+  <a href="#" class="card">
+    <div class="card__image"></div>
+    <div class="card__content">
+      <div class="card__name">Lisa</div>
+      <div class="card__favDrama">True Beauty</div>
+      <div class="card__oneliner">"Ang~"</div>
+    </div>
+  </a>
+
+</section>
+
 </main>
 
-<footer></footer>
-
-</body>
-</html>
+<%- include ("./partials/footer") %>

@@ -3,22 +3,24 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const mongodb = require('mongodb');
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
+
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const ejs = require('ejs');
 
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
 require('dotenv').config();
 
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 
-// connecting to MongoDB
-mongodb.connect(process.env.DB_CONNECTION, { useUnifiedTopology: true}, async (err, client) => {
-  const db = client.db();
-  const results = await db.collection().find().toArray();
-  console.log(results);
-  client.close();
-});
+// mongodb connection
+const uri = process.env.DB_CONNECTION;
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 
 // static files
@@ -36,12 +38,12 @@ app.get("/", (req, res) => {
 
 // about page
 app.get("/about", (req, res) => {
-  res.send("This is the about page.");
+  res.render("about");
 });
 
 // profile page
 app.get("/profile", (req, res) => {
-  res.send("This is your profile.");
+  res.render("profile");
 });
 
 
