@@ -22,7 +22,6 @@ const uri = process.env.DB_CONNECTION;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
-
 // static files
 app.use(express.static(__dirname + "/public"));
 
@@ -34,6 +33,11 @@ app.set("views", path.join(__dirname, "views"));
 // homepage
 app.get("/", (req, res) => {
   res.render("home");
+});
+
+// users
+app.get("/ann", (req, res) => {
+  res.render("ann");
 });
 
 // about page

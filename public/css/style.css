@@ -28,9 +28,12 @@ header {
   /* flex-wrap: wrap; */
 }
 
+.logo__container {
+  padding-right: 1rem;
+}
+
 .logo {
   width: 5rem;
-
 }
 
 nav {
@@ -59,11 +62,11 @@ nav li a:hover {
 }
 
 .aboutHeader {
-  padding-right: .5rem;
+  padding-right: .25rem;
 }
 
 .profileHeader {
-  padding-left: .5rem;
+  padding-left: .25rem;
 }
 
 /* main business */
@@ -106,12 +109,23 @@ h2 {
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15);
 }
 
+/* .card__image__container {
+  max-height: 184px;
+  overflow: hidden;
+} */
+
 .card__image {
-  background-image: url('/images/dog.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  flex: 0 0 160px;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 200px;
+  max-height: 250px;
+}
+
+img {
+  max-width: auto;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .card__content {
@@ -119,7 +133,12 @@ h2 {
   flex-direction: column;
   padding: 1rem;
   height: 100%;
+  background-color: white;
 }
+
+/* .card > .card__content {
+  max-height: 50%;
+} */
 
 .card__name {
   font-size: 1.5rem;
@@ -140,32 +159,33 @@ h2 {
 
 }
 
+/* user business */
+.back__button__container {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 3rem 0 3rem;
+}
+
+.back__button {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
 /* profile business */
-.profileCard {
+.profile__card, .user__card{
   display: flex;
   justify-content: center;
   padding: 2.5rem 3rem;
 }
 
-.profile {
+.profile, .user {
   display: flex;
   flex-direction: column;
   max-width: 350px;
   overflow: hidden;
   background-color: white;
   border-radius: 10px;
-}
-
-button {
-  font-family: Montserrat, monospace;
-  background-color: #F0C808;
-  border-style: none;
-  border-radius: 10px;
-  padding: .5rem 0;
-}
-
-button:hover {
-  
 }
 
 /* footer business */

@@ -17,7 +17,9 @@ MyDramaMatch is a matching app where you can meet people with similar taste in K
 
 Create a `.env` file with:
 
-`URI= //URI from MongoDB`
+```javascript  
+DB_CONNECTION= // This is a URI from MongoDB
+```
 
 ---
 
@@ -36,3 +38,7 @@ When you're finished setting everything up run `nodemon start` in the terminal.
 
 ## DevDependencies
 - [nodemon](https://www.npmjs.com/package/nodemon)
+
+## License
+
+Voor dit project maak ik gebruik van het MIT license.
